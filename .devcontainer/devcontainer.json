@@ -1,0 +1,20 @@
+
+{
+	"name": "Starling Dev Container",
+	"image": "starlingdevcontainer:latest",
+        "workspaceFolder": "/home/bentlesf/projects/StarlingMonkey",
+	"runArgs": [ "--rm","-it","--security-opt","seccomp=unconfined","--name","devcontainer-44998","--ulimit","rtprio=99:99","--net=host","-u","1000:1000","-v","build-starling-user-data-latest:/etc","-v","/home/bentlesf/.build-starling-user-home-latest:/home/bentlesf","-v","/home/bentlesf/.ssh:/.ssh","-v","/home/bentlesf/.gitconfig:/.gitconfig","-v","/home/bentlesf/projects/StarlingMonkey:/home/bentlesf/projects/StarlingMonkey","-e","HOME=/home/bentlesf","-w","/home/bentlesf/projects/StarlingMonkey" ],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"1YiB.rust-bundle",
+				"rust-lang.rust-analyzer",
+				"golang.go",
+				"fill-labs.dependi"
+			]
+		}
+	}
+}
+

@@ -1,0 +1,8 @@
+version=latest
+
+cont_tag=starlingdevcontainer:${version}
+
+build_user_data=build-starling-user-data-${version}
+build_user_home=~/.build-starling-user-home-${version}
+
+devcontainer_name="Starling Dev Container"
